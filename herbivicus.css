@@ -1,0 +1,192 @@
+@import url('multicarousel.css');
+@import url('design.css');
+@import url('https://fonts.googleapis.com/css?family= family=Dancing+Script&display=swap | Comfortaa&display=swap');
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(HOUSE_PLANTS/bkg11.jpg);
+  background-size: cover;
+  color: rgb(252, 250, 250);
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(8, 2, 2);
+}
+
+.top-wrapper h1 {
+  opacity: 0.8;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  line-height: 50px;
+}
+
+
+
+.fa {
+  margin-right: 5px;
+}
+
+
+
+
+/*------------Categories---------------*/
+
+.featured-categories
+{
+    margin: 100px 0;
+    padding: 80px 0;
+}
+.featured-categories p
+{
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #227a5d;
+    
+}
+.featured-categories p::before
+{
+    content: '';
+    background: #436e67;
+    height: 5px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(90px);
+}
+.featured-categories p::after
+{
+    content: '';
+    background:#436e67;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: block;
+    transform: translateY(23px);
+}
+
+
+
+.featured-categories img
+{   
+    padding: 20px 0;
+    width: 100%;
+    
+}
+.btn-choose
+{
+    width: 150px;
+    padding: 10px 0;
+    outline: none!important;
+    border: 0;
+    border-radius: 2px;
+    position: absolute;
+    background: #ffffff;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0);
+    transition: 0.6s;
+    opacity: 0; 
+    z-index: 1;
+}
+.featured-categories .plant-img:hover .btn-choose
+{
+transform: translate(-50%,50%);
+bottom: 50%;
+opacity: 1;
+}
+
+
+
+/*--------------------------------------Facts----------------------------------------*/
+
+
+
+.facts-main
+{
+    padding: 50px;
+    margin: 50px 0;
+    background-image: url('HOUSE_PLANTS/factbkg1.png');
+}
+.facts-main p
+{
+    text-align: left;
+    padding: 0 20px 20px 20px;
+    color: #5f5d60;
+    font-weight: 600;
+    font-size: 50px;
+    text-shadow: 4px 4px rgb(69, 70, 68);
+}
+.facts
+{
+    display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: auto;
+  align-items: center;
+  width: 100%;
+}
+.facts ul
+{
+    
+    list-style-image: url('HOUSE_PLANTS/point1.png');
+}
+.facts ul li{
+    padding: 10px 0;
+    color: #1b3b00;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+}
+
+
+/*------------------------------------Related Topics-----------------------------*/
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #227a5d;
+}
+
+.heading h2 {
+  font: weight 600px;
+}
+
+.ytvideos {
+  max-width: 1170px;
+  text-align: center;
+  width: 100%;
+  padding: 50px 15px;
+  margin: 0 auto 100px auto;
+}

@@ -1,0 +1,289 @@
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position :fixed;
+    top: 0;
+    z-index: 8;
+    margin-bottom: 50px;
+  }
+  
+  .logo {
+    width: 124px;
+    margin-top: 20px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Add CSS for menu-icon */
+  .menu-icon
+  {
+    color: white;
+    float: left;
+    font-size: 25px;
+    padding: 21px 0;
+  
+  }
+  
+  
+  
+  
+  /* Style the sidebar - fixed full height */
+  .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: -200px;
+    line-height: 30px;
+    background-color: #4d8581!important;
+    overflow-x: hidden;
+    padding-top: 50px;
+  transition: all .5s ease ;
+  }
+  .sidebar h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1e2c2b;
+    text-align: center;
+    line-height: 20px;
+    user-select: none;
+  }
+  /* Style sidebar links */
+  .sidebar a {
+    padding: 30px;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 15px;
+    color: white;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: .5s;
+  }
+  
+  /* Style links on mouse-over */
+  .sidebar a:hover {
+    color: black;
+    padding-left: 50px ;
+  }
+  
+  #check{
+    display: none;
+  }
+  
+  label #btn,label #cancel
+  {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10;
+  }
+  label #btn
+  {
+    left: 30px;
+    top: 20px;
+    font-size: 25px;
+    color: white;
+    padding: 6px 12px;
+    padding-bottom: 20px;
+    transition: all .5s;
+  }
+  label #cancel
+  {
+    z-index: 1111;
+    left: -195px;
+    top: 20px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: all .5s ease;
+  }
+  #check:checked ~ .sidebar
+  {
+    left:0;
+  }
+  #check:checked ~ label #btn
+  {
+    left:250px;
+    opacity: 0;
+    pointer-events:none;
+  }
+  #check:checked ~ label #cancel
+  {
+  left: 195px;
+  }
+  
+  
+  
+  /* Style the main content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  
+  /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
+  
+  
+  
+  /* Using Slick slider*/
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+    
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /*-------------------FOOTER------------------*/
+
+
+  .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer 
+  {
+    text-align:center
+  }
+}

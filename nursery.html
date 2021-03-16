@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Nurseries around</title>
+
+    <link rel="stylesheet" href="nursery.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+
+    
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img class="logo" src="HOUSE_PLANTS/logo1.png">
+        </div>
+        
+  
+        <div class="header-right">
+          <a href="index.html">Home</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="nursery.html">Plant Nurseries</a>
+          
+        </div>
+      </div>
+    </header>
+
+    
+    <!-------------------- The sidebar -------------------------->
+
+       <input type="checkbox" id="check">
+       <label for="check">
+           <i class="fa fa-bars" id="btn"></i>
+           <i class="fa fa-times" id="cancel"></i>
+       </label>
+<div class="sidebar">
+    <h4>CATEGORIES</h4>
+    <a href="ornamental.html">Ornamental & Aromatic</a>
+    <a href="pureair.html">Air Purifier & Humidifier</a>
+    <a href="medic.html">Medicinal</a>
+    <a href="insrepel.html">Insect Repellant</a>
+    <a href="goodluck.html">Good Luck</a>
+    <a href="psychoactive.html">Psychoactive</a>
+  </div>
+
+
+<!----------------------------Map Locater  ------------------->
+    <div class="loc">
+      <h2>Find Plant Nurseries near you</h2>
+      
+</div>
+<div class="container" id="loc">
+  <div class="form-group" id="setdiv">
+    <label class="control-label">Location:</label>
+    <input type="text" id="us3-address" />
+  </div>
+    </div>
+    <div id="map">
+      
+    </div>
+    
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script src="maps.js"></script>  
+
+
+
+<!----Services---->
+<section id="services">
+  <div class="container">
+    <h1>ANY SUGGESTIONS! YOU'RE WELCOME!</h1>
+    
+          <!------Get in touch------>
+          <section id="contact">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <form class="contact-form">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email-id">
+                        </div>
+                        <div class="form-group">
+                              <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                        </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                  </div>
+                
+                </div>
+            </div>
+          </section>
+  </div>
+</section>
+
+
+
+  <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(159862)</script> 
+
+
+  <!------------- Footer ----------------->
+      
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Quote</h6>
+          <p class="text-justify">Luther Burbank quoted, “Don’t wait for someone to bring you flowers. Plant your own garden and decorate your own soul.”</p>
+        </div>
+
+        <div class="col-xs-6 col-md-6">
+          <h6>Search</h6>
+          <div class="input-group ">
+            <input type="text" class="form-control" placeholder="Search here">
+            <div class="input-group-append">
+              <span class="input-group-text">Go!</span>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+       <a href="#">Aishwarya</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+        
+      </div>
+    </div>
+</footer>
+</body>
+</html>
